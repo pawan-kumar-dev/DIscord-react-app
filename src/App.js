@@ -15,7 +15,6 @@ function App() {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      console.log(authUser);
       if (authUser) {
         dispatch(
           login({
