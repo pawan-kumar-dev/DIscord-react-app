@@ -4,6 +4,7 @@
   align-items: center;
   color: gray;
   padding: 8px;
+  cursor: pointer;
 }
 .chatHeader_hash {
   color: gray;
@@ -42,4 +43,9 @@
   outline: 0;
   border: 0;
   color: wheat;
+}
+@media (max-width: 720px) {
+  .chatHeader__right {
+    display: none;
+  }
 }

@@ -6,12 +6,13 @@ import PeopleAltRoundedIcon from "@material-ui/icons/PeopleAltRounded";
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
 import SendRoundedIcon from "@material-ui/icons/SendRounded";
 import HelpRoundedIcon from "@material-ui/icons/HelpRounded";
-const ChatHeader = () => {
+const ChatHeader = ({ channelName, handleClick }) => {
   return (
-    <div className="chatHeader">
+    <div className="chatHeader" onClick={handleClick}>
       <div className="chatHeader__left">
         <h3>
-          <span className="chatHeader_hash">#</span>Test ChannelName
+          <span className="chatHeader_hash">#</span>
+          {channelName || "Select Channel"}
         </h3>
       </div>
       <div className="chatHeader__right">

@@ -15,7 +15,18 @@
 }
 .sidebar__channels {
   flex: 1;
+  overflow-y: auto;
 }
+.sidebar__channels::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+.sidebar__channels::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 8px;
+}
+
 .sidebar__addChannel {
   cursor: pointer;
 }
@@ -63,4 +74,30 @@
 }
 .sidebar__profileInfo > h3 {
   color: white;
+}
+.sidebar__profile > .MuiAvatar-root {
+  cursor: pointer;
+}
+.sidebar__addChatModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__addChatModalContainer {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 400px;
+  background-color: white;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__addChannelButton {
+  margin-top: 50px !important;
+  text-transform: inherit !important;
+  background-color: #738adb !important;
+  color: white !important;
 }
